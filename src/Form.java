@@ -1,20 +1,31 @@
-public class Form {
-    private String color;
 
-    public Form() {
+public class Form
+{
+    private String color;
+    public Form()
+    {
         this.color = "white";
     }
-
-    public Form(String color) {
-        this.color = color;
+    public Form(String color)
+    {
+        this.color=color;
     }
-
-    public float getArea() {
+    public float getArea()
+    {
         return 0;
     }
+    public String toString()
+    {
+        return "This form has the color " + color;
+    }
 
-    @Override
-    public String toString() {
-        return "This form has the color:" +color;
+    public String getColor()
+    {
+        return color;
+    }
+
+    public void setColor(String color)
+    {
+        this.color = color;
     }
 }
