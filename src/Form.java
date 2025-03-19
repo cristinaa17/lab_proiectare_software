@@ -2,9 +2,11 @@
 public class Form
 {
     private String color;
+    private static int counter = 0;
     public Form()
     {
         this.color = "white";
+        counter++;
     }
     public Form(String color)
     {
@@ -27,5 +29,9 @@ public class Form
     public void setColor(String color)
     {
         this.color = color;
+    }
+    public static int getCounter()
+    {
+        return counter;
     }
 }
